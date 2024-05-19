@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import Searcher from './components/Searcher';
 import PokemonList from './components/PokemonList';
 import { getPokemon } from './api';
+import { setPokemons } from './actions';
 import logo from './statics/logo.svg';
 import './App.css';
-import { setPokemons } from './actions';
 
 function App() {
   const pokemons = useSelector((state) => state.pokemons);
